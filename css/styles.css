@@ -143,7 +143,7 @@ figure{
     background-color: hsla(234, 85%, 45%, 0.1);
 }
 
-@media (min-width: 800px){
+@media (min-width: 700px){
     body{
         height: 100vh;
         display: flex;
