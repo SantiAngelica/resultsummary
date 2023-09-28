@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+@font-face {
+    font-family: haken;
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+.box__resultado {
+    background-image: linear-gradient(to top right, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.box__resultado p {
+    text-align: center;
+    font-size: 18px;
+    font-family: haken;
+    color: hsla(221, 100%, 96%, 0.3);
+
+}
+
+.box__resultado__cuentas {
+    background-image: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    border-radius: 100%;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.box__resultado_parrafo {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.box__resultado_parrafo p {
+    color: hsla(221, 100%, 96%, 0.7);
+    font-size: 15px;
+}
+.box__datos{
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.box__datos__etiqueta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+.box__datos__chico{
+    margin-top: 15px;
+}
+.etiqueta{
+    display: flex;
+    flex-direction: row;
+}
+.valor{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.valor p{
+    font-family: haken;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.btn{
+    color: hsl(0, 0%, 100%);
+    font-family: haken;
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: hsl(224, 30%, 27%);
+    border: hsl(224, 30%, 27%);
+    border-radius: 30px;
+}
+h1 {
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 18px;
+    color: hsla(221, 100%, 96%, 0.6);
+    font-family: haken;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 60px;
+    font-family: haken;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: haken;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 10px;
+}
+h4{
+    font-family: haken;
+    color: hsl(224, 41%, 26%);
+}
+h5{
+    display: flex;
+    align-items: center;
+    font-family: haken;
+    font-size: 15px;
+}
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+}
+.etiqueta__reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.etiqueta__memory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.etiqueta__verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.etiqueta__visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+@media (min-width: 800px){
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        border-radius: 30px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    }
+    .box__resultado{
+        border-radius: 30px;
+        width: 290px;
+        height: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .box__resultado__cuentas{
+        width: 180px;
+        height: 180px;
+    }
+    .box__datos{
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 290px;
+    }
+    .btn{
+        margin-bottom: 0;
+    }
+    .btn:hover{
+        background-image: linear-gradient(to top right, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+        cursor: pointer;
+    }
+}
